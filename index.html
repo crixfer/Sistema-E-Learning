@@ -22,67 +22,91 @@
       max-width: 800px;
     }
 
+    .main-container {
+      margin: 20px;
+    }
+
     .options-container {
       display: flex;
       align-items: center;
       gap: 30px;
+      margin-right: 15px;
+    }
+
+    .option {
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .descripcion,
+    footer {
+      text-align: center;
     }
   </style>
 
   <!-- Contenido de la pagina -->
   <body class="container">
     <div class="wrapper">
-      <header>
+      <header class="header">
         <img
           src="./imagenes/BLISS OFFICIAL LOGO SMALL PNG (1).png"
           style="width: 100px"
           alt="Logo"
         />
         <div class="options-container">
-          <div id="Inicio" class="option">Inicio</div>
-          <div id="Cursos" class="option">Cursos</div>
-          <div id="Inscripción" class="option">Inscripción</div>
+          <a href="#inicio" class="option">Inicio</a>
+          <a href="#cursos" class="option">Cursos</a>
+          <a href="#inscripcion" class="option">Inscripción</a>
+          <a href="#contacto" class="option">Contactos</a>
         </div>
-
-        <h1>BLISS</h1>
       </header>
 
-      <main>
+      <main class="main-container">
         <img
           src="./imagenes/teaching 2.jpg"
           alt="E-learning Idiomas"
           style="width: 100%; height: auto; border-radius: 10px"
         />
 
-        <p>
+        <p class="descripcion">
           Permite la creación y gestión de cursos online, la interacción entre
           estudiantes y profesores, y el seguimiento del avance educativo.
         </p>
 
-        <table border="1" cellpadding="5" cellspacing="0">
-          <tr>
-            <th>Curso</th>
-            <th>Duración</th>
-            <th>Profesor</th>
-          </tr>
-          <tr>
-            <td>Inglés Básico</td>
-            <td>3 meses</td>
-            <td>John Doe</td>
-          </tr>
-          <tr>
-            <td>Francés Intermedio</td>
-            <td>4 meses</td>
-            <td>Marie Curie</td>
-          </tr>
-        </table>
+        <section class="section-1">
+          <h2 id="cursos" class="curso">Cursos</h2>
+          <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+              <th>Curso</th>
+              <th>Duración</th>
+              <th>Profesor</th>
+            </tr>
+            <tr>
+              <td>Inglés Básico</td>
+              <td>3 meses</td>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <td>Francés Intermedio</td>
+              <td>4 meses</td>
+              <td>Marie Curie</td>
+            </tr>
+          </table>
+        </section>
 
-        <h2>Inscribirse en Curso</h2>
-        <form>
-          Nombre: <input type="text" name="nombre" /><br /><br />
-          Curso: <input type="text" name="curso" /><br /><br />
-          <button type="submit">Inscribirse</button>
-        </form>
+        <section class="section-2">
+          <h2 id="inscripcion">Inscribirse en Curso</h2>
+          <form>
+            Nombre: <input type="text" name="nombre" /><br /><br />
+            Curso: <input type="text" name="curso" /><br /><br />
+            <button type="submit">Inscribirse</button>
+          </form>
+        </section>
+
+        <section id="contacto" class="contacto">
+          <h2>Contactos</h2>
+        </section>
       </main>
 
       <footer>

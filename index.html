@@ -5,56 +5,89 @@
     <meta charset="UTF-8" />
     <title>E-learning Escuela de Idiomas</title>
   </head>
-  <body>
-    <header>
-      <img
-        src="./imagenes/BLISS OFFICIAL LOGO SMALL PNG (1).png"
-        style="width: 100px"
-        alt="Logo"
-      />
-      <h1>BLISS</h1>
-    </header>
 
-    <main>
-      <img
-        src="./imagenes/teaching 2.jpg"
-        alt="E-learning Idiomas"
-        style="width: 700px; height: auto"
-      />
+  <!-- Estilo de la pagina -->
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
 
-      <p>
-        Permite la creación y gestión de cursos online, la interacción entre
-        estudiantes y profesores, y el seguimiento del avance educativo.
-      </p>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
 
-      <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-          <th>Curso</th>
-          <th>Duración</th>
-          <th>Profesor</th>
-        </tr>
-        <tr>
-          <td>Inglés Básico</td>
-          <td>3 meses</td>
-          <td>John Doe</td>
-        </tr>
-        <tr>
-          <td>Francés Intermedio</td>
-          <td>4 meses</td>
-          <td>Marie Curie</td>
-        </tr>
-      </table>
+    .wrapper {
+      max-width: 800px;
+    }
 
-      <h2>Inscribirse en Curso</h2>
-      <form>
-        Nombre: <input type="text" name="nombre" /><br /><br />
-        Curso: <input type="text" name="curso" /><br /><br />
-        <button type="submit">Inscribirse</button>
-      </form>
-    </main>
+    .options-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  </style>
 
-    <footer>
-      <i class="fa fa-copyright" aria-hidden="true">Copyright Bliss 2025</i>
-    </footer>
+  <!-- Contenido de la pagina -->
+  <body class="container">
+    <div class="wrapper">
+      <header>
+        <img
+          src="./imagenes/BLISS OFFICIAL LOGO SMALL PNG (1).png"
+          style="width: 100px"
+          alt="Logo"
+        />
+        <div class="options-container">
+          <div id="Inicio" class="option">Inicio</div>
+          <div id="Cursos" class="option">Cursos</div>
+          <div id="Inscripción" class="option">Inscripción</div>
+        </div>
+
+        <h1>BLISS</h1>
+      </header>
+
+      <main>
+        <img
+          src="./imagenes/teaching 2.jpg"
+          alt="E-learning Idiomas"
+          style="width: 100%; height: auto; border-radius: 10px"
+        />
+
+        <p>
+          Permite la creación y gestión de cursos online, la interacción entre
+          estudiantes y profesores, y el seguimiento del avance educativo.
+        </p>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Curso</th>
+            <th>Duración</th>
+            <th>Profesor</th>
+          </tr>
+          <tr>
+            <td>Inglés Básico</td>
+            <td>3 meses</td>
+            <td>John Doe</td>
+          </tr>
+          <tr>
+            <td>Francés Intermedio</td>
+            <td>4 meses</td>
+            <td>Marie Curie</td>
+          </tr>
+        </table>
+
+        <h2>Inscribirse en Curso</h2>
+        <form>
+          Nombre: <input type="text" name="nombre" /><br /><br />
+          Curso: <input type="text" name="curso" /><br /><br />
+          <button type="submit">Inscribirse</button>
+        </form>
+      </main>
+
+      <footer>
+        <i class="fa fa-copyright" aria-hidden="true">Copyright Bliss 2025</i>
+      </footer>
+    </div>
   </body>
 </html>
